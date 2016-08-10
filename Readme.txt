@@ -1,1 +1,1 @@
-﻿Nguyễn Hữu Lộc MSSV: 12520234
+Day 1: 23-7-2016 Create New Project
