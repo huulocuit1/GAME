@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="FrameWork">
+      <UniqueIdentifier>{63ca2147-1751-4428-9e66-c0309acbe32a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archive">
+      <UniqueIdentifier>{d21d787e-9425-4222-bd9d-35e9bb3bbdb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map">
+      <UniqueIdentifier>{5782180d-f13f-47e3-838e-3f6a1e9aff35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="State">
+      <UniqueIdentifier>{bc18575f-ea46-4f27-ab46-a5063d8b524c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Main Game">
+      <UniqueIdentifier>{7d3df737-8c7f-4f00-b558-56fcc692a013}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="State\StateMenu">
+      <UniqueIdentifier>{e63b4225-7adb-48b3-b0c0-ef5d589e7420}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map\Objects">
+      <UniqueIdentifier>{ffe17c85-52be-44d4-a0c6-327488ed6361}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map\Objects\Dynamic">
+      <UniqueIdentifier>{7c031564-fcc1-4eff-8895-56e6354afa8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map\Objects\Satics">
+      <UniqueIdentifier>{ea3b9800-c70a-4127-99ff-62eb17f115b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="State\Xmllibs">
+      <UniqueIdentifier>{7b6aa0e3-0fc5-4212-829e-07af09fc8690}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FKeyboard.cpp">
+      <Filter>FrameWork</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>FrameWork</Filter>
+    </ClCompile>
+    <ClCompile Include="FSound.cpp">
+      <Filter>FrameWork</Filter>
+    </ClCompile>
+    <ClCompile Include="MarioGame.cpp">
+      <Filter>Source Files\Main Game</Filter>
+    </ClCompile>
+    <ClCompile Include="RSManager.cpp">
+      <Filter>FrameWork</Filter>
+    </ClCompile>
+    <ClCompile Include="Objects.cpp">
+      <Filter>Map\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Background.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Quadtree.cpp">
+      <Filter>Archive</Filter>
+    </ClCompile>
+    <ClCompile Include="Box.cpp">
+      <Filter>Archive</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Map\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Colision.cpp">
+      <Filter>Archive</Filter>
+    </ClCompile>
+    <ClCompile Include="Xml libs\tinystr.cpp">
+      <Filter>State\Xmllibs</Filter>
+    </ClCompile>
+    <ClCompile Include="Xml libs\tinyxml.cpp">
+      <Filter>State\Xmllibs</Filter>
+    </ClCompile>
+    <ClCompile Include="Xml libs\tinyxmlerror.cpp">
+      <Filter>State\Xmllibs</Filter>
+    </ClCompile>
+    <ClCompile Include="Xml libs\tinyxmlparser.cpp">
+      <Filter>State\Xmllibs</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectsManager.cpp">
+      <Filter>Map\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Mushroom.cpp">
+      <Filter>Map\Objects\Dynamic</Filter>
+    </ClCompile>
+    <ClCompile Include="Mark.cpp">
+      <Filter>Map\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Flower.cpp">
+      <Filter>Map\Objects\Dynamic</Filter>
+    </ClCompile>
+    <ClCompile Include="Butlet.cpp">
+      <Filter>Map\Objects\Dynamic</Filter>
+    </ClCompile>
+    <ClCompile Include="StateMap1.cpp">
+      <Filter>State</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectsList.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyManager.cpp">
+      <Filter>Map\Objects\Dynamic</Filter>
+    </ClCompile>
+    <ClCompile Include="MarkManager.cpp">
+      <Filter>Map\Objects\Satics</Filter>
+    </ClCompile>
+    <ClCompile Include="Coin.cpp">
+      <Filter>Map\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Turtle.cpp">
+      <Filter>Map\Objects\Dynamic</Filter>
+    </ClCompile>
+    <ClCompile Include="TurtleNormal.cpp">
+      <Filter>Map\Objects\Dynamic</Filter>
+    </ClCompile>
+    <ClCompile Include="Brick.cpp">
+      <Filter>Map\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="World.cpp">
+      <Filter>Map\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="MushRunner.cpp">
+      <Filter>Map\Objects\Dynamic</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonP.cpp">
+      <Filter>Map\Objects\Satics</Filter>
+    </ClCompile>
+    <ClCompile Include="StateMap2.cpp">
+      <Filter>State</Filter>
+    </ClCompile>
+    <ClCompile Include="DownH.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecRect.cpp">
+      <Filter>Map\Objects\Satics</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FKeyboard.h">
+      <Filter>FrameWork</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>FrameWork</Filter>
+    </ClInclude>
+    <ClInclude Include="FSound.h">
+      <Filter>FrameWork</Filter>
+    </ClInclude>
+    <ClInclude Include="MarioGame.h">
+      <Filter>Source Files\Main Game</Filter>
+    </ClInclude>
+    <ClInclude Include="RSManager.h">
+      <Filter>FrameWork</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects.h">
+      <Filter>Map\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Background.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Quadtree.h">
+      <Filter>Archive</Filter>
+    </ClInclude>
+    <ClInclude Include="Box.h">
+      <Filter>Archive</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Map\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Colision.h">
+      <Filter>Archive</Filter>
+    </ClInclude>
+    <ClInclude Include="Xml libs\tinystr.h">
+      <Filter>State\Xmllibs</Filter>
+    </ClInclude>
+    <ClInclude Include="Xml libs\tinyxml.h">
+      <Filter>State\Xmllibs</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectsManager.h">
+      <Filter>Map\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Mushroom.h">
+      <Filter>Map\Objects\Dynamic</Filter>
+    </ClInclude>
+    <ClInclude Include="Mark.h">
+      <Filter>Map\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Flower.h">
+      <Filter>Map\Objects\Dynamic</Filter>
+    </ClInclude>
+    <ClInclude Include="Butlet.h">
+      <Filter>Map\Objects\Dynamic</Filter>
+    </ClInclude>
+    <ClInclude Include="State.h">
+      <Filter>State</Filter>
+    </ClInclude>
+    <ClInclude Include="StateMap1.h">
+      <Filter>State</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectsList.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyManager.h">
+      <Filter>Map\Objects\Dynamic</Filter>
+    </ClInclude>
+    <ClInclude Include="MarkManager.h">
+      <Filter>Map\Objects\Satics</Filter>
+    </ClInclude>
+    <ClInclude Include="Coin.h">
+      <Filter>Map\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Turtle.h">
+      <Filter>Map\Objects\Dynamic</Filter>
+    </ClInclude>
+    <ClInclude Include="TurtleNormal.h">
+      <Filter>Map\Objects\Dynamic</Filter>
+    </ClInclude>
+    <ClInclude Include="Brick.h">
+      <Filter>Map\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="World.h">
+      <Filter>Map\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="MushRunner.h">
+      <Filter>Map\Objects\Dynamic</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonP.h">
+      <Filter>Map\Objects\Satics</Filter>
+    </ClInclude>
+    <ClInclude Include="StateMap2.h">
+      <Filter>State</Filter>
+    </ClInclude>
+    <ClInclude Include="DownH.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecRect.h">
+      <Filter>Map\Objects\Satics</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
