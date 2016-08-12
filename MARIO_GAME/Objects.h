@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 #include <d3dx9.h>
 #include "FKeyboard.h"
 #include "Utils.h"
@@ -29,40 +29,6 @@ enum Type
 	_SPEC,
 	DOWN_H,
 
-};
-
-
-enum eSoundId
-{
-	// Nhạc nền Map 1
-	BACKGROUND_STAGE1,
-
-	// Nhạc nền map 2
-	BACKGROUND_STAGE2,
-
-	//Nhạc nền map 3
-	BACKGROUND_STAGE3,
-
-	//Tiếng của boss 1
-	BOSS_SOUNG1,
-
-	// Mario chết
-	DEAD,
-
-	POWER_UP,
-
-	LOST_LIFE,
-
-	EAT_COIN,
-
-	// Thua
-	GAME_OVER,
-
-	INTRO,
-
-	JUMP_SOUND,
-
-	WINGAME
 };
 class Objects
 {

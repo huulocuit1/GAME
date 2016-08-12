@@ -150,9 +150,6 @@
     <ClCompile Include="SpecRect.cpp">
       <Filter>Map\Objects\Satics</Filter>
     </ClCompile>
-    <ClCompile Include="dxaudio.cpp">
-      <Filter>FrameWork</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FKeyboard.h">
@@ -259,9 +256,6 @@
     </ClInclude>
     <ClInclude Include="SpecRect.h">
       <Filter>Map\Objects\Satics</Filter>
-    </ClInclude>
-    <ClInclude Include="dxaudio.h">
-      <Filter>FrameWork</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

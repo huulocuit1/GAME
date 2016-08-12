@@ -109,7 +109,7 @@ void MarioGame::initGame(HINSTANCE hinstance, LPWSTR name, int frame_rate)
 	initDirectX();
 	initVariables();
 	this->player = new Player(d3ddv, 100.0f, 250.0f);//268
-	this->fSound->getInstance()->loadSound(hWnd);
+	
 	///new objects
 	
 	state = new StateMap();
