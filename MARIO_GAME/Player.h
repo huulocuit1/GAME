@@ -3,6 +3,7 @@
 
 #include "Sprite.h"
 #include "FKeyboard.h"
+#include "FSound.h"
 
 #include "Box.h"
 #include "Objects.h"
@@ -30,6 +31,7 @@ private :
 	bool jumped;
 	float before_y_tran;
 	bool change_level;
+	FSound*fSound;
 public :
 	Player();
 	~Player();

@@ -12,7 +12,7 @@
 #include "StateMap2.h"
 #include "State.h"
 #include "Player.h"
-
+#include "FSound.h"
 
 class MarioGame
 {
@@ -33,6 +33,7 @@ protected:
 	StateMap1 state_map1;
 	StateMap2 state_map2;
 	Player*player;
+	FSound*fSound;
 
 public:
 	static LRESULT CALLBACK WinProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam);

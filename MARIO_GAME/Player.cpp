@@ -1,5 +1,4 @@
-#include "Player.h"
-
+﻿#include "Player.h"
 extern int currentstate=1;
 extern int playerlife=0;
 extern int score=0;
@@ -24,8 +23,7 @@ Player::Player(LPDIRECT3DDEVICE9 d3ddv, float X, float Y)
 	vy = 0;
 	initPlayer(d3ddv);
 
-	type = PLAYER;
-	
+	type = PLAYER;	
 	
 }
 void Player::initPlayer(LPDIRECT3DDEVICE9 d3ddv)
@@ -206,30 +204,49 @@ void Player::updatePlayer(FKeyboard*kbd, float vpx, float vpy,double time)
 #pragma region  Player_State
 		if (y > 24)
 		{
-			
-				vy -= 0.16;
-		
-			
+
+			vy -= 0.16;
+
+
 		}
 		else
 		{
 			vy = 0;
 		}
-		if (x >= MAX_MAP1- box.getWidth()-16)
+
+		if (x >= MAX_MAP1 - box.getWidth() - 16)
 		{
-			
+
 			if (leftPress)
 			{
 				vx = -WALK_SPEED;
 				stand_right = false;
-				
-				
+
+
 			}
 			else
 			{
 				vx = 0;
 			}
 		}
+		// chỗ này é* hiểu sao check isplaying ko đc ->
+		if (rightPress){
+			if (spacePress){
+				if (fSound->getInstance()->IsPlaying(eSoundId::JUMP_SOUND) == false)
+				{
+					fSound->getInstance()->Play(eSoundId::JUMP_SOUND);
+				}
+			}
+		}
+		if (leftPress){
+			if (spacePress){
+				if (fSound->getInstance()->IsPlaying(eSoundId::JUMP_SOUND) == false)
+				{
+					fSound->getInstance()->Play(eSoundId::JUMP_SOUND);
+				}
+			}
+		}
+
 
 		if (player_state == JUMP)
 		{
@@ -244,10 +261,6 @@ void Player::updatePlayer(FKeyboard*kbd, float vpx, float vpy,double time)
 				{
 					vx = 0.9f;
 				}
-				
-				
-
-
 			}
 			if (leftPress)
 			{
@@ -270,11 +283,6 @@ void Player::updatePlayer(FKeyboard*kbd, float vpx, float vpy,double time)
 			{
 				before_col_h = y;
 			}
-			
-
-			
-			
-
 		}
 		if (player_state == STAND)
 		{
@@ -293,6 +301,12 @@ void Player::updatePlayer(FKeyboard*kbd, float vpx, float vpy,double time)
 			}
 			else if (spacePress)
 			{
+				
+				if (fSound->getInstance()->IsPlaying(eSoundId::JUMP_SOUND) == false)
+				{
+					fSound->getInstance()->Play(eSoundId::JUMP_SOUND);
+				}
+				
 				player_state = JUMP;
 				if (smallPlayer == true)
 				{
@@ -318,12 +332,7 @@ void Player::updatePlayer(FKeyboard*kbd, float vpx, float vpy,double time)
 			}
 			else
 			{
-				
 				vx = 0;
-			
-				
-				
-			
 			}
 
 			
@@ -923,7 +932,9 @@ void Player::updatePlayer(FKeyboard*kbd, float vpx, float vpy,double time)
 					
 					if (!player_alive)
 					{
+
 						//Die......................
+						fSound->getInstance()->Play(eSoundId::DEAD);
 						player_small_die->nextSprite();
 					}
 				}
